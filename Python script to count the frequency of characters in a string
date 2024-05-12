@@ -1,0 +1,12 @@
+def count_char_frequency(text):
+    char_freq = {}
+    for char in text:
+        if char in char_freq:
+            char_freq[char] += 1
+        else:
+            char_freq[char] = 1
+    return char_freq
+
+text = "Hello, World!"
+frequency = count_char_frequency(text)
+print(frequency)
